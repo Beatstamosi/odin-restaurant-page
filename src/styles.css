@@ -164,3 +164,71 @@ nav button:hover {
     gap: 30px;
     justify-content: space-evenly;
 }
+
+#about-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    padding: 50px;
+    gap: 50px;
+    height: 90vh;
+}
+
+#about-hero-left {
+    display: flex;
+    flex-direction: column;
+}
+
+#about-hero-left h2, #story-header, #vision-header {
+    color: var(--starWhite);
+    font-size: 5em;
+    margin-bottom: 30px;
+}
+
+
+#story {
+    padding: 100px 50px;
+    background-color: black;
+}
+
+#about-hero-left p, #story-text, #vision-text {
+    color: var(--lightGray);
+    font-size: 1.2em;
+}
+
+#about-hero-right img {
+    height: 65%;
+}
+
+#vision {
+    background-color: #c03d89;
+    padding: 100px 50px;
+    text-align: right;
+}
+
+#team-section {
+    padding: 50px;
+    height: 100vh;
+}
+
+#team-section > h2 {
+    font-size: 5em;
+    color: black;
+    margin-bottom: 50px;
+}
+
+#team {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.team-member img {
+    width: 380px;
+}
+
+.team-member {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: flex-start;
+    padding: 0px 30px;
+}
