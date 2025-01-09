@@ -1,0 +1,166 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --starWhite: #efefe8;
+    --lightGray: lightgray;
+}
+
+@font-face {
+    font-family: blanka;
+    src: url("./font/Blanka-Regular.woff2");
+  }
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: blanka, sans-serif;
+}
+
+body {
+    font-family: monospace;
+    font-size: 18px;
+    background-image: url(./img/stellar_spoon_background.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+}
+
+
+header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 20px;
+    color: var(--lightGray);
+}
+
+nav {
+    display: flex;
+    gap: 50px;
+    justify-content: flex-start;
+}
+
+nav button {
+    font-family: blanka, sans-serif;
+    font-size: 1em;
+    background: none;
+    border: none;
+    color: var(--lightGray);
+}
+
+nav button:hover {
+    cursor: pointer;
+    transform: scale(1.2);
+    color: var(--starWhite);
+}
+
+#home-banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: var(--starWhite);
+    margin-top: 200px;
+}
+
+#home-banner h1 {
+    font-size: 7em;
+    color: transparent;
+    transition: 500ms ease;
+    margin-bottom: 50px;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+}
+
+#subheader-home {
+    font-size: 1.5em;
+}
+
+
+#explore-menu {
+    font-family: blanka, sans-serif;
+    font-size: 1.5em;
+    background: none;
+    border: none;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+    color: var(--lightGray);
+    margin-top: 30px;
+}
+
+#explore-menu:hover {
+    color: transparent;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+#intro-menu {
+    padding: 20px 200px 20px 50px;
+}
+
+#intro-menu h2 {
+    color: var(--starWhite);
+    margin-bottom: 20px;
+    font-size: 4em;
+    margin-top: 30px;
+}
+
+#intro-menu p {
+    color: var(--lightGray);
+}
+
+#menu {
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    padding: 0px 50px;
+    margin-top: 50px;
+}
+
+#menu-left {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 60px;
+    border-right: 2px solid var(--lightGray);
+}
+
+#menu-left button {
+    background: none;
+    border: none;
+    color: var(--starWhite);
+    font-family: blanka, sans-serif;
+    font-size: 2em;
+    background: linear-gradient(90deg, red, orange, yellow, green, blue, purple);
+    background-clip: text;
+}
+
+#menu-left button:hover {
+    color: transparent;
+    transition: 500ms ease;
+    cursor: pointer;
+}
+
+#menu-left button:focus {
+    color: transparent;
+}
+
+#menu-right {
+    padding-left: 50px;
+}
+
+#menu-right h2 {
+    color: var(--starWhite);
+    margin-bottom: 5px;
+    font-size: 2.5em;
+}
+
+#menu-right p {
+    color: var(--lightGray);
+}
+
+#menu-items {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    justify-content: space-evenly;
+}
